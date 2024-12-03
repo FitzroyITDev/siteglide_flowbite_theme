@@ -1,0 +1,169 @@
+---
+metadata:
+  file_extension: ".scss"
+---
+
+.section-icon {
+    height: 60px;
+    width: 60px;
+  }
+.section-icon-services {
+  height: 50px;
+  width: 65px;
+}
+// Videos
+figure {
+    text-align: center;
+}
+
+.rounded-image-1 {
+  height: 200px; 
+  width: 200px;
+  border-radius: 50%;
+}
+
+img.img-banner {
+   object-fit: cover;
+   height: 100%;
+}
+
+img.img-scale-down {
+  object-fit: scale-down;
+  height: 100%;
+}
+
+img.img-contain {
+  object-fit: contain;
+  height: 100%;
+}
+
+// AWS SMB ICONS
+.cloud-icon {
+  width: 50px;
+}
+.rainbow-icon {
+  width: 90px;
+}
+
+//Image container sizes (Only use with img tags)
+.img-container-height-lg {
+  height: 125px;
+}
+
+.img-container-height-md {
+  height: 70px;
+}
+
+.img-container-height-sm {
+  height: 25px;
+}
+
+// Small image size - Rising Star Partner of the Year section (Small devices only)
+.award-sm {
+  @media only screen and (max-width: 475px)  {
+    & {
+        height: 60px!important;
+    }
+    & h2 {
+      font-size: 3vh!important;
+      line-height: 3.5vh!important;
+    }
+
+  }
+
+  @media only screen and (max-width: 415px)  {
+    & {
+        height: 60px!important;
+    }
+    & h2 {
+      font-size: 2vh!important;
+      line-height: 2.5vh!important;
+    }
+
+  }
+
+  @media only screen and (max-width: 300px)  {
+    & {
+        height: 40px!important;
+    }
+    & h2 {
+      font-size: 1.5vh!important;
+      line-height: 2vh!important;
+    }
+
+  }
+}
+
+.img-no-label {
+  // background-color: $color-6; 
+  // padding: 10px; 
+  // border-radius: 50%;
+  &.label-bg-large {
+    width: 350px; 
+    height: 450px;
+  }
+  &.label-bg-small {
+    width: 25px; 
+    height: 25px;
+  }
+}
+
+.mosaic-img-bg-large {
+  width: 350px;
+  height: 450px;
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    & {
+      width: 300px;
+      height: 400px;
+    }
+}
+  .img-with-bottom-label {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .bottom-backdrop {
+      background-color: $color-4;
+      position: absolute;
+      top: 83%;
+      left: 0;
+      height: 17%;
+      width: 100%;
+      opacity: 0.5;
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        & {
+          top: 68%;
+          height: 32%
+        }
+      }
+    }
+    img.img-banner {
+      width: 100%;
+    }
+    .mosaic-img-content {
+      position: absolute;
+      top: 83%;
+      left: 0;
+      height: 17%;
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        & {
+          top: 68%;
+          height: 32%
+        }
+      }
+    }
+  }
+}
+  
+  .mosaic-img-bg-small {
+    width: 25px;
+    height: 25px;
+  }
+
+.client-logo-icons {
+  height: 50px;
+}
+
+.iso-logo-icons {
+  height: 120px;
+}

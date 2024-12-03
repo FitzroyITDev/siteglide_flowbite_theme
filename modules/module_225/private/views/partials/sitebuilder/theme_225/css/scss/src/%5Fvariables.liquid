@@ -1,0 +1,424 @@
+// Studio variables
+
+// Resets
+
+$body-position: relative;
+$reset-border: 0;
+$reset-border-radius: 0;
+$reset-box-shadow: none;
+$reset-color: transparent;
+$reset-margin: 0;
+$reset-padding: 0;
+
+// 1.1 Colours
+
+//// Primary Colours
+
+$color-primary: #1579C1;
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
+
+//// Secondary Colours
+
+$color-secondary: #001a31;
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+
+//// Tertiary Colours
+
+$color-tertiary: #27c469;
+$color-tertiary-dark: darken($color-tertiary, 10%);
+$color-tertiary-light: lighten($color-tertiary, 10%);
+
+//// Accent Colours
+
+$color-brown: #83462c;
+$color-blue: #0036f4;
+$color-green: #008b0e;
+$color-orange: #ff9901;
+$color-pink: #f02a75;
+$color-purple: #7737ff;
+$color-red: #c50000;
+$color-yellow: #f0f007;
+
+//// Greyscale Colours
+
+$color-black: #000000;
+$color-grey-darkest: #333333;
+$color-grey-dark: #595959;
+$color-grey: #808080;
+$color-grey-light: #d9d9d9;
+$color-grey-lightest: #f7f7f7;
+$color-white: #ffffff;
+
+//// Background Colours
+
+$background-color-primary: $color-primary;
+$background-color-secondary: $color-secondary;
+$background-color-light: $color-grey-lightest;
+$background-color-dark: $color-grey-darkest;
+$background-color-white: $color-white;
+
+// 1.3 Typeface
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//// Text Colours
+
+$text-color-black: $color-black;
+$text-color-grey: $color-grey;
+$text-color-grey-light: $color-grey-lightest;
+$text-color-white: $color-white;
+
+$color-text-primary: $text-color-black;
+$color-text-secondary: $text-color-grey-light;
+
+// Typeface Headings
+
+// Defaults
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-weight:        400;
+$headings-line-height:        1.2;
+$headings-color:              $color-text-primary;
+$header-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Display Headers
+$display1-font-size: $font-size-base * 5;
+
+$display2-font-size: $font-size-base * 4.5;
+
+$display3-font-size: $font-size-base * 4;
+
+$display4-font-size: $font-size-base * 3.5;
+
+$display5-font-size: $font-size-base * 3;
+
+$display6-font-size: $font-size-base * 2.5;
+
+
+// Headers
+
+$h1-font-size: $font-size-base * 2.5;
+$h1-font-weight: $headings-font-weight;
+$h1-font-weight-bold: $font-weight-bold;
+$h1-font-weight-light: $font-weight-light;
+$h1-line-height: $headings-line-height;
+$h1-margin: $headings-margin-bottom;
+$h1-text-color: $color-text-primary;
+
+$h2-font-size: $font-size-base * 2;
+$h2-font-weight: $headings-font-weight;
+$h2-font-weight-bold: $font-weight-bold;
+$h2-font-weight-light: $font-weight-light;
+$h2-line-height: $headings-line-height;
+$h2-margin: $headings-margin-bottom;
+$h2-text-color: $color-text-primary;
+
+$h3-font-size: $font-size-base * 1.75;
+$h3-font-weight: $headings-font-weight;
+$h3-font-weight-bold: $font-weight-bold;
+$h3-font-weight-light: $font-weight-light;
+$h3-line-height: $headings-line-height;
+$h3-margin: $headings-margin-bottom;
+$h3-text-color: $color-text-primary;
+
+$h4-font-size: $font-size-base * 1.5;
+$h4-font-weight: $headings-font-weight;
+$h4-font-weight-bold: $font-weight-bold;
+$h4-font-weight-light: $font-weight-light;
+$h4-line-height: $headings-line-height;
+$h4-margin: $headings-margin-bottom;
+$h4-text-color: $color-text-primary;
+
+$h5-font-size: $font-size-base * 1.25;
+$h5-font-weight: $headings-font-weight;
+$h5-font-weight-bold: $font-weight-bold;
+$h5-font-weight-light: $font-weight-light;
+$h5-line-height: $headings-line-height;
+$h5-margin: $headings-margin-bottom;
+$h5-text-color: $color-text-primary;
+
+$h6-font-size: $font-size-base;
+$h6-font-weight: $headings-font-weight;
+$h6-font-weight-bold: $font-weight-bold;
+$h6-font-weight-light: $font-weight-light;
+$h6-line-height: $headings-line-height;
+$h6-margin: $headings-margin-bottom;
+$h6-text-color: $color-text-primary;
+
+//// Typefaces Body
+
+$body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-awesome-font-family: "Font Awesome 5 Free";
+
+//// Body
+
+$paragraph-font-size: $font-size-base;
+$paragraph-font-weight: $font-weight-normal;
+$paragraph-line-height: 1.5;
+$paragraph-margin: 15px;
+
+//// Quote
+
+$blockquote-font-size: 20px;
+$blockquote-font-weight: 300;
+$blockquote-line-height: 1.5em;
+$blockquote-margin: 15px;
+
+$cite-font-size: 14px;
+$cite-font-weight: 600;
+$cite-line-height: 1.85em;
+$cite-margin: 15px;
+$cite-font-style: normal;
+
+//// Caption
+
+$caption-font-size: 14px;
+$caption-font-weight: 600;
+$caption-line-height: 1.85em;
+$caption-margin: 15px;
+
+//// Link
+
+$anchor-color: $color-primary;
+$anchor-cursor: pointer;
+$anchor-font-size: inherit;
+$anchor-font-weight: 400;
+$anchor-hover-focus-color: $color-primary-dark;
+$anchor-line-height: 1.625em;
+$anchor-text-decoration: none;
+$anchor-hover-text-decoration: underline;
+
+//// Bullet and Ordered List
+
+$list-font-size: 16px;
+$list-font-weight: 400;
+$list-line-height: 1.625em;
+$list-margin: 15px;
+$list-style-position: outside;
+
+// 2.1 Icons
+
+$icon-font-size: 16px;
+$icon-md-font-size: 24px;
+$icon-lg-font-size: 36px;
+
+//// Images
+
+$image-border-radius: 4px;
+
+// 2.2 Buttons and States
+
+//// Global Buttons
+
+$btn-padding: 0.75rem 1rem;
+$btn-border-radius: 10px;
+$btn-border-width: 2px;
+$btn-font-size: 16px;
+$btn-font-weight: 600;
+$btn-line-height: 1.22em;
+$btn-lg-font-size: 16px;
+$btn-lg-line-height: 1.625em;
+$btn-lg-padding: 0.75rem 3rem;
+$btn-sm-font-size: 14px;
+$btn-sm-line-height: 1.858em;
+$btn-sm-padding: 10px 16px;
+$btn-text-decoration: none;
+$btn-width: 100%;
+$btn-mobile-width: auto;
+
+//// Primary Button
+
+$btn-primary-background-color: $color-primary;
+$btn-primary-border-color: $color-primary;
+$btn-primary-text-color: $color-white;
+$btn-primary-focus-background-color: $color-primary-dark;
+$btn-primary-focus-border-color: $color-primary-dark;
+$btn-primary-focus-text-color: $color-white;
+$btn-primary-hover-background-color: $color-primary-light;
+$btn-primary-hover-border-color: $color-primary-light;
+$btn-primary-hover-text-color: $color-white;
+
+//// Primary Outline Button
+
+$btn-outline-primary-background-color: $reset-color;
+$btn-outline-primary-border-color: $color-primary;
+$btn-outline-primary-text-color: $color-primary;
+$btn-outline-primary-focus-background-color: $reset-color;
+$btn-outline-primary-focus-border-color: $color-primary-dark;
+$btn-outline-primary-focus-text-color: $color-primary-dark;
+$btn-outline-primary-hover-background-color: $reset-color;
+$btn-outline-primary-hover-border-color: $color-primary-light;
+$btn-outline-primary-hover-text-color: $color-primary-light;
+
+//// Secondary Button
+
+$btn-secondary-background-color: $color-secondary;
+$btn-secondary-border-color: $color-secondary;
+$btn-secondary-text-color: $color-white;
+$btn-secondary-focus-background-color: $color-secondary-dark;
+$btn-secondary-focus-border-color: $color-secondary-dark;
+$btn-secondary-focus-text-color: $color-white;
+$btn-secondary-hover-background-color: $color-secondary-light;
+$btn-secondary-hover-border-color: $color-secondary-light;
+$btn-secondary-hover-text-color: $color-white;
+
+//// Secondary Outline Button
+
+$btn-outline-secondary-background-color: $reset-color;
+$btn-outline-secondary-border-color: $color-secondary;
+$btn-outline-secondary-text-color: $color-secondary;
+$btn-outline-secondary-focus-background-color: $reset-color;
+$btn-outline-secondary-focus-border-color: $color-secondary-dark;
+$btn-outline-secondary-focus-text-color: $color-secondary-dark;
+$btn-outline-secondary-hover-background-color: $reset-color;
+$btn-outline-secondary-hover-border-color: $color-secondary-light;
+$btn-outline-secondary-hover-text-color: $color-secondary-light;
+
+//// Tertiary Button
+
+$btn-tertiary-background-color: $color-tertiary;
+$btn-tertiary-border-color: $color-tertiary-dark;
+$btn-tertiary-text-color: $color-white;
+$btn-tertiary-focus-background-color: $color-tertiary-dark;
+$btn-tertiary-focus-border-color: $color-tertiary;
+$btn-tertiary-focus-text-color: $color-white;
+$btn-tertiary-hover-background-color: $color-tertiary-light;
+$btn-tertiary-hover-border-color: $color-tertiary;
+$btn-tertiary-hover-text-color: $color-white;
+
+//// Tertiary Outline Button
+
+$btn-outline-tertiary-background-color: $reset-color;
+$btn-outline-tertiary-border-color: $color-tertiary;
+$btn-outline-tertiary-text-color: $color-tertiary;
+$btn-outline-tertiary-focus-background-color: $reset-color;
+$btn-outline-tertiary-focus-border-color: $color-tertiary-dark;
+$btn-outline-tertiary-focus-text-color: $color-tertiary-dark;
+$btn-outline-tertiary-hover-background-color: $reset-color;
+$btn-outline-tertiary-hover-border-color: $color-tertiary-light;
+$btn-outline-tertiary-hover-text-color: $color-tertiary-light;
+
+//// Danger Button
+
+$btn-danger-background-color: $red;
+$btn-danger-border-color: $red;
+$btn-danger-text-color: $color-white;
+$btn-danger-focus-background-color: darken($red, 10%);
+$btn-danger-focus-border-color: darken($red, 10%);
+$btn-danger-focus-text-color: $color-white;
+$btn-danger-hover-background-color: lighten($red, 10%);
+$btn-danger-hover-border-color: lighten($red, 10%);
+$btn-danger-hover-text-color: $color-white;
+
+//// Danger Outline Button
+
+$btn-outline-danger-background-color: $reset-color;
+$btn-outline-danger-border-color: $red;
+$btn-outline-danger-text-color: $red;
+$btn-outline-danger-focus-background-color: $reset-color;
+$btn-outline-danger-focus-border-color: darken($red, 10%);
+$btn-outline-danger-focus-text-color: darken($red, 10%);
+$btn-outline-danger-hover-background-color: $reset-color;
+$btn-outline-danger-hover-border-color: lighten($red, 10%);
+$btn-outline-danger-hover-text-color: lighten($red, 10%);
+
+//// Warning Button
+
+$btn-warning-background-color: $yellow;
+$btn-warning-border-color: $yellow;
+$btn-warning-text-color: $color-white;
+$btn-warning-focus-background-color: darken($yellow, 10%);
+$btn-warning-focus-border-color: darken($yellow, 10%);
+$btn-warning-focus-text-color: $color-white;
+$btn-warning-hover-background-color: lighten($yellow, 10%);
+$btn-warning-hover-border-color: lighten($yellow, 10%);
+$btn-warning-hover-text-color: $color-white;
+
+//// Warning Outline Button
+
+$btn-outline-warning-background-color: $reset-color;
+$btn-outline-warning-border-color: $yellow;
+$btn-outline-warning-text-color: $yellow;
+$btn-outline-warning-focus-background-color: $reset-color;
+$btn-outline-warning-focus-border-color: darken($yellow, 10%);
+$btn-outline-warning-focus-text-color: darken($yellow, 10%);
+$btn-outline-warning-hover-background-color: $reset-color;
+$btn-outline-warning-hover-border-color: lighten($yellow, 10%);
+$btn-outline-warning-hover-text-color: lighten($yellow, 10%);
+
+//// Success Button
+
+$btn-success-background-color: $green;
+$btn-success-border-color: $green;
+$btn-success-text-color: $color-white;
+$btn-success-focus-background-color: darken($green, 10%);
+$btn-success-focus-border-color: darken($green, 10%);
+$btn-success-focus-text-color: $color-white;
+$btn-success-hover-background-color: lighten($green, 10%);
+$btn-success-hover-border-color: lighten($green, 10%);
+$btn-success-hover-text-color: $color-white;
+
+//// Success Outline Button
+
+$btn-outline-success-background-color: $reset-color;
+$btn-outline-success-border-color: $green;
+$btn-outline-success-text-color: $green;
+$btn-outline-success-focus-background-color: $reset-color;
+$btn-outline-success-focus-border-color: darken($green, 10%);
+$btn-outline-success-focus-text-color: darken($green, 10%);
+$btn-outline-success-hover-background-color: $reset-color;
+$btn-outline-success-hover-border-color: lighten($green, 10%);
+$btn-outline-success-hover-text-color: lighten($green, 10%);
+
+//// Link Button
+
+$btn-link-border-radius: $reset-border-radius;
+
+// 2.3 Form Inputs
+
+$input-border-radius: 4px;
+$input-font-size: 16px;
+$input-font-weight: 400;
+$input-height: 50px;
+$input-line-height: 1.625em;
+$input-padding: 12px 20px;
+
+$label-font-size: 16px;
+$label-font-weight: 700;
+$label-line-height: 1.625em;
+$label-margin: 10px;
+$label-text-color: $color-text-primary;
+
+// 2.4 Item Layouts
+
+$card-border-radius: 10px;
+$card-body-padding: 30px;
+$card-header-padding: 30px;
+
+$form-border-radius: 10px;
+$form-padding: 30px;
+
+$form-group-margin: 20px;
+
+// 3 Blocks
+
+$block-padding: 50px 0;
+$block-lg-padding: 100px 0;
+
+// DEPRECATED
+
+$color-blue-dark: #101a29;
+$color-mint-green: #aeff91;
+
+// Hero Header - see the Display headers
+$hero-font-size: 50px;
+$hero-font-weight: 400;
+$hero-font-weight-bold: 600;
+$hero-font-weight-light: 300;
+$hero-line-height: 1.22em;
+$hero-margin: 15px;
+$hero-text-color: $color-text-primary;

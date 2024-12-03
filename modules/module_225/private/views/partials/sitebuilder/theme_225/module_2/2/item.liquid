@@ -1,0 +1,29 @@
+{% raw %}
+    {%- comment -%} If this item has children, output the item, and then go get its children {%- endcomment -%}
+{%- if this['is_parent'] -%}
+<li {% if this['link_class'] %} class="{{this['link_class']}}" {%- endif -%}>
+    <a href="{{this['link_url']}}"{% if this['link_target'] %} target="{{this['link_target']}}"{% endif %}><h2
+        {% if context.location.href == this['link_url'] or 
+              context.location.href == '/aws' or 
+              context.location.href == '/sos' %} class="border-bottom-green" {% endif %}
+        >{{this['link_name']}}</h2></a>
+    {%- comment -%} Wrap children in <ul>, set the next level, and then get the children {%- endcomment -%}
+    <ul class="no-list-style ps-md-4 ps-3">
+        {%- assign _next_level = _level | plus: 1 -%}
+        {%- include 'modules/siteglide_menu/get/get_items', level: _next_level, parent_id: this['forced_id'], item_layout: 'item' -%}
+    </ul>
+</li>
+{%- comment -%} Else just output the item by itself {%- endcomment -%}
+{%- else -%}
+{% assign _next_level_temp = 0 %}
+<div class="pb-2 col-12 col-lg-4
+    {% if this['link_class'] %} {{this['link_class']}} {%- endif -%}
+   ">
+    {% if _next_level %} {% assign _next_level_temp = 1 %} {% endif %}
+    <a href="{{this['link_url']}}"><p
+        class="color-1-text"
+        {% if this['link_target'] %} target="{{this['link_target']}}"{% endif %}
+        >{{this['link_name']}}</p></a>
+</div>
+{%- endif -%}
+{% endraw %}

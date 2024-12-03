@@ -1,0 +1,271 @@
+---
+metadata:
+  file_extension: ".scss"
+---
+
+.btn-white {
+    background: $color-1;
+    border: solid 3px $color-2;
+    color: $color-2!important;
+    font-weight: 600;
+    padding: 15px 35px 12px 35px;
+    display: inline-block;
+    position: relative;
+    background-size: 0 100%;
+    background-image: linear-gradient(to right, $color-2, $color-2);
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-white:hover {
+    background-color: $color-2;
+    color: $color-1!important;
+    background-size: 100% 100%;
+    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.btn-grey {
+    background: $color-6;
+    border-radius: 10px;
+    border-color: transparent;
+    color: $color-2!important;
+    font-weight: 400;
+    padding: 15px 35px 12px 35px;
+    display: inline-block;
+    position: relative;
+    background-size: 0 100%;
+    background-image: linear-gradient(to right, $color-2, $color-2);
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-grey:hover {
+    background-color: $color-2;
+    color: $color-1!important;
+    background-size: 100% 100%;
+    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.btn-green {
+    background: $color-3;
+    border-radius: 10px;
+    border-color: transparent;
+    color: $color-1!important;
+    font-weight: 400;
+    padding: 10px 25px 7px 25px;
+    display: inline-block;
+    position: relative;
+    background-size: 0 100%;
+    background-image: linear-gradient(to right, $color-2, $color-2);
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: $color-2;
+    color: $color-1!important;
+    background-size: 100% 100%;
+    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.btn-black {
+    background: $color-2;
+    border-radius: 20px;
+    color: $color-1!important;
+    font-weight: 600;
+    padding: 15px 35px 12px 35px;
+    display: inline-block;
+    position: relative;
+    background-size: 0 100%;
+    background-image: linear-gradient(to right, #fff, #fff);
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    i {
+        color: $color-1;
+    }
+}
+
+.btn-black:hover {
+    background-color: $color-1;
+    color: $color-2!important;
+    background-size: 100% 100%;
+    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.btn-white-border-white {
+    background: $color-1;
+    border-radius: 10px;
+    border: 2px solid $color-1;
+    color: $color-2!important;
+    font-weight: 600;
+    padding: 15px 35px 12px 35px;
+    display: inline-block;
+    position: relative;
+    background-size: 0 100%;
+    background-image: linear-gradient(to right, $color-2, $color-2);
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-white-border-white:hover {
+    background-color: $color-2;
+    color: $color-1!important;
+    background-size: 100% 100%;
+    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.back-button {
+    &.back-button-color-1 {
+        span {
+            color: $color-1;
+        }
+    }
+    span {
+        color: $color-2;
+        font-size: 16px!important;
+    }
+    i {
+        color: $color-3;
+        border: 2px solid $color-3;
+        border-radius: 50%;
+        padding: 3px 6px 3px 6px;
+        margin-right: 5px;
+        &.back-button-color-1 {
+            color: $color-1;
+            border: 2px solid $color-1;
+        }
+    }
+}
+
+.badge-button {
+    background: $color-2;
+    border-radius: 7px;
+    color: $color-1!important;
+    font-weight: 400;
+    padding: 7px 15px 4px 15px;
+    display: inline-block;
+    font-size: 16px;
+    background-size: 0 100%;
+    background-image: linear-gradient(to right, $color-3, $color-3);
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    i {
+        color: $color-1;
+    }
+}
+
+.badge-button:hover {
+    background-color: $color-3;
+    background-size: 100% 100%;
+    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.banner-button h3 {
+    transition: all 0.3s linear;
+}
+
+.banner-button:hover h3 {
+    font-size: 2.5rem;
+}
+
+//Link buttons
+.link-button-dark {
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s linear;
+}
+
+.link-button-dark:hover {
+    border-bottom: 3px solid $color-4;
+}
+
+.link-button-light {
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s linear;
+}
+
+.link-button-light:hover {
+    border-bottom: 3px solid $color-3;
+}
+
+.rotateIconStateButton {
+    border: none; 
+    background: transparent; 
+    width: 100%; 
+    text-align: start;
+    span {
+        width: 100%; 
+        display:flex; 
+        align-items:center; 
+        justify-content:space-between;
+        .icon-1, .icon-2 {
+            padding: 10px;
+            width: 70px;
+            height: 70px;
+            line-height: 50px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            box-sizing: border-box;
+            transition: .5s all ease-out;
+        }
+        .icon-1 {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+        .icon-2 {
+            opacity: 0;
+            transform: rotate(-90deg);
+        }
+    }
+    &.active {
+        .icon-1 {
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+        .icon-2 {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+#search-close-button {
+    i {
+        color: $color-1;
+        font-size: 25px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+}
+
+.members-area-nav-button {
+    color: $color-5;
+    border-bottom: 3px solid transparent;
+    transition: all linear 0.5s;
+    display: inline-block;
+}
+
+.members-area-nav-button:hover {
+    color: $color-2!important;
+    border-bottom: 3px solid $color-4;
+}
+
+.disabled-button {
+    background: $color-6;
+    border-radius: 10px;
+    border-color: transparent;
+    color: $color-2 !important;
+    font-weight: 400;
+    padding: 10px 25px 7px 25px;
+    display: inline-block;
+    position: relative;
+}

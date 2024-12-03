@@ -1,0 +1,96 @@
+{% raw %}
+  {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
+
+  <header class="sg-masthead sg-masthead-02">
+    <section>
+      <div class="d-none d-lg-block">
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3">
+          <div class="container">
+            <a href="/" class='navbar-brand'>
+              <span><img
+                  class="img-fluid"
+                  src="{{ context.exports.company_information.properties.logo | asset_url }}"
+                  style="height: 70px;"></span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse dropdown-custom-menu" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+					{%- include 'modules/siteglide_menu/get/get_items', item_layout: 'item' -%}
+					<li style="margin-top: 3px!important;"><a id="search-button"><i class="fas fa-search link-button-color-7" style="font-size: 25px;"></i></a></li>
+				</ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="nav-mobile-section">
+      <nav class="navbar navbar-light">
+        <div class="container">
+          <a href="/" class='navbar-brand d-lg-none'>
+            <span><img
+                class="img-fluid"
+                src="{{ context.exports.company_information.properties.logo | asset_url }}"
+                style="height: 50px;"></span>
+          </a>
+          <button
+            class="navbar-toggler mb-2 d-lg-none"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#navbarModal"
+            aria-controls="navbarModal"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="modal fade"
+            id="navbarModal"
+            tabIndex="-1"
+            aria-labelledby="navbarModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header pb-3">
+                  <div class='container-fluid'>
+                    <div class='row justify-content-between align-items-center'>
+                      <div class='col-10'>
+                        <h5 class="modal-title text-black" id="navbarModal">
+                          <span class="pb-3"><img
+                              class="img-fluid"
+                              src="{{ context.exports.company_information.properties.logo | asset_url }}"
+                              style="height: 50px;"></span>
+                        </h5>
+                      </div>
+                      <div class='col-2 text-end'>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-body ps-md-5 ps-5">
+					<ul class="navbar-nav ms-auto">
+						{%- include 'modules/siteglide_menu/get/get_items', item_layout: 'item' -%}
+						<li style="margin-top: 3px!important;"><a id="search-button"><i class="fas fa-search link-button-color-7" style="font-size: 25px;"></i></a></li>
+					</ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+{% endraw %}

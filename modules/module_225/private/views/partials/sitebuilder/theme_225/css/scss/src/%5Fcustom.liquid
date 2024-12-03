@@ -1,0 +1,66 @@
+---
+metadata:
+  file_extension: ".scss"
+---
+
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* ------------------------------GENERAL CLASSES USED THROUGHTOUT THE APPLICATION------------------------ */
+@import "./common/variables";
+@import "./common/typography";
+@import "./common/paddings_and_margins";
+@import "./common/lists";
+@import "./common/navbar";
+@import "./common/forms";
+@import "./common/containers";
+@import "./common/buttons";
+@import "./common/colors";
+@import "./common/images_icons";
+// @import "./common/fonts";
+
+// Bootstrap Custom Style Module
+@import "./bootstrap-custom/cards";
+@import "./bootstrap-custom/caroussel";
+@import "./bootstrap-custom/containers";
+@import "./bootstrap-custom/modal";
+@import "./bootstrap-custom/navbar";
+
+html body,
+html body>*,
+section[id] {
+    margin: 0;
+    font-size: $default-font-size;
+    p,a,button, ul li {
+        font-size: $default-font-size;
+    }
+    font-family: $paragraph-font;
+    color: $color-2;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.no-pointer {
+    cursor: default;
+}
+
+.grecaptcha-badge {
+    visibility: hidden !important;
+}

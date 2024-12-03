@@ -1,0 +1,153 @@
+{% comment %}Test Theme for Siteglide Templating project{% endcomment %}
+{
+  "theme_225": {
+    "title": "Siteglide - Flowbite custom theme", {% comment %}String. Required. The name of your Theme.{% endcomment %}
+    "enabled": true, {% comment %}Boolean. Required. Set to true to enable your Theme.{% endcomment %}
+    "image": "https://uploads.staging.oregon.platform-os.com/instances/9428/assets/images/FitzroyIT.Logo.Black.png?updated=1684986511226", {% comment %}String (absolute path to image URL). Required. The banner image which will be displayed on the Page Template card when a template is created using this Theme.{% endcomment %}
+    "thumbnail_logo": "https://uploads.staging.oregon.platform-os.com/instances/9428/assets/images/FitzroyIT.Logo.Black.png?updated=1684986511226", {% comment %}String (absolute path to image URL). Optional. The smaller logo which will be displayed on the Layout Card for this Theme's layouts. Transparent background and square image recommended. It need be no bigger than 80px * 80px;{% endcomment %}
+    "description": "This is a test theme module from Fitzroy IT. This module will be used for creating pages with Sitbuilder, reusing previous components created for other websites.", {% comment %}Description{% endcomment %}
+    "css_framework": { {% comment %}Object. Optional. This can help Theme users understand its compatiblilty with other Themes, for example two different Themes using Bootstrap may look different, but the underlying code in their layouts may be so similar that it's useful to show layouts from both. If there is no relevant CSS framework, remove this property.{% endcomment %}
+      "title": "Bootstrap 5", {% comment %}String. Required. The name of the CSS framework this Theme uses. {% endcomment %}
+      "logo": "https://res.cloudinary.com/sitegurus/image/upload/v1653915047/modules/module_86/admin/frameworks/icons/bootstrap-logo.svg", {% comment %}String (absolute URL for image). Optional. A small logo for the CSS framework which will be displayed on the Layout Card for this Theme's layouts.Transparent background and square image recommended. It need be no bigger than 80px * 80px;{% endcomment %}
+      "docs_url": "https://getbootstrap.com/docs/5.0/getting-started/introduction/", {% comment %}String. Optional. Link to CSS framework docs. These may be distinct from your Theme documentation. {% endcomment %}
+      "show_sitebuilder_tailwind_settings": false, {% comment %}Boolean. Required. Mark false unless your CSS framework uses Tailwind. This gives this Theme access to SiteBuilder's Tailwind Options instead of CSS preferences below.{% endcomment %}
+      "show_framework_on_layout_card": false {% comment %}Boolean. Optional. If your Theme and CSS framework have the same name e.g. Bootstrap and Bootstrap, mark as false to avoid repetition. If not, mark as true to display both Theme and Framework on the Layout card.{% endcomment %}
+    },
+    "layouts": {%- include 'modules/module_225/sitebuilder/theme_225/layout_config' -%}, {% comment %}Liquid include. Required. You can copy this as in the example. It links to the layout_config file which will be explained later.{% endcomment %}
+    "modules": [  "module_s1",  "module_2",  "module_s2",  "module_3",  "module_s3",  "module_5",  "module_8",  "module_10", "module_12", "webapp"], {% comment %}Array (array of strings). Required. These are the IDs of modules that this Theme includes layouts for. A list of built in module IDs are available below.{% endcomment %}
+    "approve_all_modules": true, {% comment %}Boolean. Required. Setting this to true allows any Module creator to build Module layouts for your Theme, or any Theme creator to mark their Theme as compatible with yours. Setting this to false allows you to protect your IP by disallowing this kind of collaboration by default. For open-source Themes, it's recommended to set this to true, as allowing collaboration is in the spirit of the open-source community.{% endcomment %}
+    "approved_modules": [], {% comment %}Array (array of strings). Required (can be empty array). If you have set "approve_all_modules" to true, you can leave this as an empty array. Otherwise, if you've set "approve_all_modules" to false, you can use this array to specify Modules which you've reviewed and would like to specifically allow to extend this Theme. Module creators may get in touch with you and request for you to add their Module to this list.{% endcomment %}
+    "compatible_themes": ["theme_02"], {% comment %}This allows you to mark another Theme as compatible with yours, by its ID. This tends to be useful if this Theme uses the same underlying CSS framework. If either of two Themes has this setting and neither has "approve_all_modules" as true {% endcomment %}
+    "theme_not_installable_alone": false, {% comment %}Boolean. Optional. When set to false or unset, this Theme is available to those making Page Templates in SiteBuilder. When set to true, this Theme is only available as a compatible Theme to extend another Theme, and cannot be used in a Page Template in its own right. A good example here is Flowbite and Flowbite Pro Themes. It would be confusing to give Theme users a choice between the two when creating their page template, so only Flowbite has "theme_not_installable_alone" set to false. Flowbite Pro layouts are available though through the compatible Themes feature to those using a Flowbite Page Template.{% endcomment %}
+    "css_preference_options": {
+      "scss": {
+        "title": "Sass",
+        "default_selected": true,
+        "installable_files": [
+          {
+            "src": "src/%5Fbootstrap%5Ffunctions",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/%5Fbootstrap%5Fvariables",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/%5Fcustom",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/%5Fcustom-variables",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/%5Flayouts",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/main",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/%5Fvariables",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/%5Fstudio",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fbuttons",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fcolors",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fcontainers",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Ffonts",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fforms",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fimages%5Ficons",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Flists",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fnavbar",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fpaddings%5Fand%5Fmargins",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Ftypography",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/common/%5Fvariables",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/bootstrap-custom/%5Fcards",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/bootstrap-custom/%5Fcaroussel",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/bootstrap-custom/%5Fcontainers",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/bootstrap-custom/%5Fmain",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/bootstrap-custom/%5Fmodal",
+            "ext": ".scss"
+          },
+          {
+            "src": "src/bootstrap-custom/%5Fnavbar",
+            "ext": ".scss"
+          },
+          {
+            "src": "dist/main",
+            "ext": ".min.css",
+            "link_in_template": true
+          }
+        ],
+        "description": "Creates Sass files on your site which you can use via Siteglide CLI."
+      },
+      "min_css": {
+        "title": "Minified CSS",
+        "installable_files": [
+          {
+            "src": "main",
+            "ext": ".min.css",
+            "link_in_template": true
+          },
+          {
+            "src": "custom",
+            "ext": ".css",
+            "link_in_template": true
+          }
+        ],
+        "description": "Creates one minified file containing the framework's CSS code and provides a second unminified custom CSS file which you can use to make custom overrides."
+      }
+    }
+  }
+}
