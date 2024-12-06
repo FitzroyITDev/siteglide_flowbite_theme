@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+
+@import "./custom_components/button";
+@import "./custom_components/input";
+/* See https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
